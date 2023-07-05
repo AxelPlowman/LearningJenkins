@@ -10,7 +10,7 @@ pipeline {
                 echo $version
                 echo 
                 echo '(should be version 18.16.0)'
-                if [ $version == '18.16.0' ]; then 
+                if ( $version == '18.16.0' ); then 
                     echo 'node version is the correct version!'
                 else 
                     echo  'node version is not the correct version.'
